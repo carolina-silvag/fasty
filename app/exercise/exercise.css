@@ -76,6 +76,10 @@ header {
   height: 900px;
 }
 
+.ultimo {
+  margin-bottom: 200px
+}
+
 footer {
   background-color: #ffffff;
   position:fixed;
@@ -94,7 +98,7 @@ footer {
   font-size:  45px;
 }
 
-.menu-01:active, .menu-02:active, .menu-03:active {
+.active {
   background-color: #37d3f8;
   color:  #ffffff;
   font-size:  45px;
@@ -104,4 +108,15 @@ footer {
   margin-top:94%;
   width: 90%;
   height: 250px;
+}
+
+.menu-02 i {
+  color:  #ffffff;
+}
+.menu-02 p {
+  color:  #ffffff;
+}
+
+.fondoFooter {
+  background-color: #ffffff;
 }
