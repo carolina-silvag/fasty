@@ -71,27 +71,6 @@
 	</footer>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -99,37 +78,7 @@
     <script src="./exercise.js" type="text/javascript" charset="utf-8" async defer></script>
 
     <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDm66l6GJpdlfMG7tBEq4keemYQ4WcCkJ4",
-        authDomain: "innovaton-86d52.firebaseapp.com",
-        databaseURL: "https://innovaton-86d52.firebaseio.com",
-        projectId: "innovaton-86d52",
-        storageBucket: "innovaton-86d52.appspot.com",
-        messagingSenderId: "907196788389"
-      };
-      firebase.initializeApp(config);
-      var r = firebase.database();
-      var ref = r.ref("coordenadas");
+    <script src="./conexion_firebase.js" type="text/javascript" charset="utf-8" async defer></script>
 
-        // Attach an asynchronous callback to read the data at our posts reference
-        ref.on("value", function(coordenadas) {
-          data = coordenadas.val();
-          // console.log(data)
-          resultado = '';
-
-          for (var i in data) {
-            if (data.hasOwnProperty(i)) {
-                resultado = data[i];
-            }
-          }
-
-          changeAngle(resultado);
-
-        }, function (errorObject) {
-          console.log("The read failed: " + errorObject.code);
-        });
-    </script>
 </body>
 </html>
